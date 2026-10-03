@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Barberia</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Generación de ticket en PDF (licencia Community: ver README) -->
+    <PackageReference Include="QuestPDF" Version="2024.12.*" />
+    <!-- Generación del código QR -->
+    <PackageReference Include="QRCoder" Version="1.6.0" />
+  </ItemGroup>
+
+</Project>

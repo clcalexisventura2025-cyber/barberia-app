@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserva de citas · Barbería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="pole" aria-hidden="true"></div>
+  <div id="app"></div>
+
+  <dialog id="modal">
+    <form id="modal-form" autocomplete="off">
+      <h2 id="modal-title"></h2>
+      <div id="modal-body"></div>
+      <p class="form-error" id="modal-error" hidden></p>
+      <div class="modal-actions">
+        <button type="button" class="btn ghost" id="modal-cancel">Cancelar</button>
+        <button type="submit" class="btn primary" id="modal-ok">Guardar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="lib/signalr.min.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/cliente.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
